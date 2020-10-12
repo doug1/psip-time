@@ -79,8 +79,8 @@ sub report_timestamp
 
         my $format  = "ll" . "ql" . "l" . "ql" . "llll" . "l" . "llllllllll";
         my $message = pack( $format,
-            $mode,      $count,      $local_sec,   $local_usec,
-            0,          $remote_sec, $remote_usec, $leap,
+            $mode,      $count,      $remote_sec,  $remote_usec,
+            0,          $local_sec,  $local_usec, $leap,
             $precision, $nsamples,   $valid,       0,
             0,          0,           0,            0,
             0,          0,           0,            0,
